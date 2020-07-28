@@ -1,0 +1,1 @@
+/usr/bin/cc  -O2 -g -DNDEBUG   CMakeFiles/pngtest.dir/pngtest.o  -o pngtest -rdynamic libpng12.so.0.59.0 /usr/local/lib/libz.so -lm -Wl,-rpath,/SoapFilm3D_dev/dependencies/Soap/libpng-1.2.59/build:/usr/local/lib 

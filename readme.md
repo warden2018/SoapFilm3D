@@ -59,3 +59,100 @@ Da, Fang, et al. "Double bubbles sans toil and trouble: Discrete circulation-pre
 Da, Fang, Christopher Batty, and Eitan Grinspun. "Multimaterial mesh-based surface tracking." ACM Trans. Graph. 33.4 (2014): 112-1. (http://www.cs.columbia.edu/cg/multitracker/)
 
 Fei, Yun (Raymond), et al. "Addressing Troubles with Double Bubbles: Convergence and Stability at Multi-Bubble Junctions." arXiv preprint arXiv:1910.06402 (2019). (https://arxiv.org/abs/1910.06402)
+
+
+
+
+############
+In order to properly install the dependencies, more libs should be pre-install.
+## freeglut:
+How to build freeglut on UNIX
+-----------------------------
+- Make sure you have cmake installed. Examples:
+  - Debian/Ubuntu: apt-get install cmake
+  - Fedora: yum install cmake
+  - FreeBSD: cd /usr/ports/devel/cmake && make install
+  Or directly from their website:
+  http://www.cmake.org/cmake/resources/software.html
+- Make sure you have the basics for compiling code, such as C compiler
+  (e.g., GCC) and the make package.
+- Also make sure you have packages installed that provide the relevant
+  header files for x11 (including xrandr) and opengl (e.g.,
+  libgl1-mesa-dev, libx11-dev and libxrandr-dev on Debian/Ubuntu).
+- Install XInput: libxi-dev / libXi-devel
+- Run 'cmake .' in the freeglut directory to generate the makefile.
+- Run 'make' to build, and 'make install' to install freeglut.
+- If you wish to change any build options run 'ccmake .'
+
+![](./glut.png)
+
+## zlib
+
+![](./zlib.png)
+
+## libPNG
+
+![](./libPNG.png)
+
+## LAPACK
+gfortran is needed to build LAPACK
+
+```bash
+sudo apt-get install gfortran
+```
+
+AND this line is added into the CMakeLists.txt of this project.
+
+```c++
+############add Fortran
+set(CMAKE_Fortran_COMPILER /usr/bin/gfortran)
+```
+![](./lapack.png)
+
+
+## BLAS
+
+```
+sudo apt-get install libblas-dev
+sudo apt-get install liblapack-dev
+```
+
+## GLEW
+
+### Build
+
+It is highly recommended to build from a tgz or zip release snapshot.
+The code generation workflow is a complex brew of gnu make, perl and python, that works best on Linux or Mac.
+For most end-users of GLEW the official releases are the best choice, with first class support.
+
+#### Linux and Mac
+
+#### Using GNU Make
+
+##### Install build tools
+
+Debian/Ubuntu/Mint:    `$ sudo apt-get install build-essential libxmu-dev libxi-dev libgl-dev libosmesa-dev`
+
+RedHat/CentOS/Fedora:  `$ sudo yum install libXmu-devel libXi-devel libGL-devel`
+
+##### Build
+
+	$ make
+	$ sudo make install
+	$ make clean
+
+Targets:    `all, glew.lib (sub-targets: glew.lib.shared, glew.lib.static), glew.bin, clean, install, uninstall`
+
+Variables:  `SYSTEM=linux-clang, GLEW_DEST=/usr/local, STRIP=`
+
+_Note: may need to make **auto** folder_
+
+![](./glew.png)
+
+## Install boost
+
+```bash
+$ sudo apt install libboost-dev
+$ sudo apt install libboost-all-dev
+```
+

@@ -1,6 +1,9 @@
 append_files (Headers "h" .)
 append_files (Sources "cpp" .)
 
+append_files (Headers "h" ./png_source/)
+append_files (Sources "c" ../png_source/)
+
 set(Boost_USE_STATIC_LIBS OFF) 
 set(Boost_USE_MULTITHREADED ON)  
 set(Boost_USE_STATIC_RUNTIME OFF) 

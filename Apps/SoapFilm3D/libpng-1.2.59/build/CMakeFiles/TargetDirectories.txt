@@ -1,0 +1,10 @@
+/SoapFilm3D_dev/dependencies/Soap/libpng-1.2.59/build/CMakeFiles/edit_cache.dir
+/SoapFilm3D_dev/dependencies/Soap/libpng-1.2.59/build/CMakeFiles/test.dir
+/SoapFilm3D_dev/dependencies/Soap/libpng-1.2.59/build/CMakeFiles/png12.dir
+/SoapFilm3D_dev/dependencies/Soap/libpng-1.2.59/build/CMakeFiles/rebuild_cache.dir
+/SoapFilm3D_dev/dependencies/Soap/libpng-1.2.59/build/CMakeFiles/png12_static.dir
+/SoapFilm3D_dev/dependencies/Soap/libpng-1.2.59/build/CMakeFiles/list_install_components.dir
+/SoapFilm3D_dev/dependencies/Soap/libpng-1.2.59/build/CMakeFiles/install.dir
+/SoapFilm3D_dev/dependencies/Soap/libpng-1.2.59/build/CMakeFiles/pngtest.dir
+/SoapFilm3D_dev/dependencies/Soap/libpng-1.2.59/build/CMakeFiles/install/local.dir
+/SoapFilm3D_dev/dependencies/Soap/libpng-1.2.59/build/CMakeFiles/install/strip.dir

@@ -7,7 +7,8 @@
 //
 
 #include "PRRenderer.h"
-#include <png.h>
+#include "png_source/png.c"
+
 
 PRRenderer::PRRenderer(VS3D * vs) :
     m_vs(vs),
